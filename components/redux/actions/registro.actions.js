@@ -4,8 +4,7 @@ import { FETCH_REGISTRO_SUCCESS, FETCH_REGISTRO_ERROR } from "../type/types";
 
 //La constante BASE_URL actúa como una ubicación central para almacenar la URL
 // base del servidor o aplicación web con la que desea interactuar.
-
-const BASE_URL = 'http://192.168.1.8:3000';//agregamos nuestra ip y el puerto del servidor
+const BASE_URL = 'http://192.168.33.88:3000';//agregamos nuestra ip y el puerto del servidor
 
 import axios from 'axios'
 

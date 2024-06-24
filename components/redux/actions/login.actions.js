@@ -1,8 +1,7 @@
 import { FETCH_AUTH_SUCCESS, FETCH_AUTH_ERROR } from "../type/types";
 
-//mi celu maneja una ip y mi back maneja otra, 
-//y si yo pongo localhost es la ip de mi cel esta buscando mi back en mi celu.
-const BASE_URL = 'http://192.168.1.8:5000';
+
+const BASE_URL = 'http://192.168.33.88:5000';
 
 import axios from 'axios'
 
