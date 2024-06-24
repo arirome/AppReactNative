@@ -4,15 +4,16 @@ import { persistor } from "./../components/redux/store/store";
 import { router } from "expo-router";
 
 export default function Panel() {
-  const handleLogout = () => {
-    persistor
-      .purge() // Eliminar estado persistente
-      .then(() => {
-        router.navigate("/"); // Redirigir al inicio de sesión
-      })
-      .catch((error) => {
-        console.error("Error al cerrar sesión:", error); // Manejar errores
-      });
+
+
+  const handleLogout = async () => {
+    try {
+      await persistor.purge();
+      router.navigate("/");
+    } catch (error) {
+      console.error('Error purging persisted state:', error);
+   
+    }
   };
 
   return (

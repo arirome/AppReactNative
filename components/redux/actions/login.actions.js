@@ -29,10 +29,9 @@ export const loginUser = (email, password) => async dispatch => {
 
 
     } catch (err) {
-
         dispatch({ type:FETCH_AUTH_ERROR, error: err });
 
-       console.log(errors)
+       console.log(err)
     }
 
     

@@ -42,7 +42,9 @@ import axios from 'axios'
         dispatch(fetchDataSuccess(res.data));
 
       } catch (error) {
-        dispatch(fetchDataFailure(error.message));
+        error = error ? error.message : 'Error';
+
+        dispatch(fetchDataFailure(error));
       }
     };
   };

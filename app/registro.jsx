@@ -91,3 +91,4 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
 });
+
